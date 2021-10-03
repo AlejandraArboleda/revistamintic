@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFEDED;/*cambia el color de fondo del body*/
+}
+.formulario_registro{
+    background-color: #D7FFFD;/*cambia el color del div(contenedor)*/
+    width: 30%; /*ancho del div*/
+    display: flex;/*contenido flexible*/
+    flex-direction: column;/*coloca el contenido en columna*/
+    align-items: center;
+
+}

@@ -7,12 +7,11 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: black;
-    /* background: linear-gradient(135deg, rgba(184, 0, 107, 0.726), rgba(155, 0, 155, 0.781),rgba(0, 0, 255, 0.719)); */
+    background: linear-gradient(135deg, #052e6e 1%, #050d22, #050d22, #050d22, #050d22 , #491f47);
 }
 .formulario_registro{
-    color: black;
-    text-shadow: 2px 2px 5px gray;
+    color: white;
+    text-shadow: 2px 2px 5px black;
     text-transform: capitalize;
     background-image: url(../imagenes/WhatsApp\ Image\ 2021-10-03\ at\ 4.06.28\ PM.jpeg);
     background-size: cover;
@@ -48,6 +47,7 @@
 }
 .campos .inputs input{/*modifica a los input dentro de la clase inputs que a su vez esta dentro de campos*/
     margin: 1.5px; /*pone un margen en los cuatro lados de 1.5px*/
+    box-shadow: 2px 2px 5px black;
 }
 
 button{ /*se modifica a la etiqueta button*/

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 .fondo{
     width: 100vw;
@@ -27,6 +28,9 @@
     position: absolute;
     top: 30px; /*Separa el contenedor del elemento superior 30px*/
     left: 30px; /*separa el contenedor del elemento a la izquierda 30px*/
+}
+.formulario_registro h1{
+    letter-spacing: 2px;
 }
 .campos{ /*modifica al contenedor de clase campos*/
     height: 55%; /*55% de alto de su padre (.formulario_registro)*/

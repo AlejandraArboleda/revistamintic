@@ -3,13 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #FFEDED;/*cambia el color de fondo del body*/
+.fondo{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    /* background: linear-gradient(135deg, rgba(184, 0, 107, 0.726), rgba(155, 0, 155, 0.781),rgba(0, 0, 255, 0.719)); */
 }
 .formulario_registro{
-    background-color: #D7FFFD;/*cambia el color del div(contenedor)*/
+    color: black;
+    text-shadow: 2px 2px 5px gray;
+    text-transform: capitalize;
+    background-image: url(../imagenes/WhatsApp\ Image\ 2021-10-03\ at\ 4.06.28\ PM.jpeg);
+    background-size: cover;
+    background-position: top;
+    /* background-color: #D7FFFD;/*cambia el color del div(contenedor)*/
     width: 30%; /*ancho del div*/
+    height: 80vh;/*alto del 80% de la vista de la ventana (viewport height)*/
     display: flex;/*contenido flexible*/
     flex-direction: column;/*coloca el contenido en columna*/
-    align-items: center;
+    align-items: center; /*centra el contenido de izquierda a derecha (solo si el direction esta en column)*/
+    justify-content: space-around; /*distribuye verticalmente el contenido de manera uniforme*/
+    border-radius: 25px; /*redondea las esquinas del contenedor*/
+    position: absolute;
+    top: 30px; /*Separa el contenedor del elemento superior 30px*/
+    left: 30px; /*separa el contenedor del elemento a la izquierda 30px*/
 }
+.campos{ /*modifica al contenedor de clase campos*/
+    height: 55%; /*55% de alto de su padre (.formulario_registro)*/
+    display: flex;
+}
+.campos .texto, .inputs{ /*modifica a las clases texto e inputs del html*/
+    height: 100%; /*100% del alto de su padre (.campos)*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;/*distribuye verticalmente el contenido de manera uniforme*/
+    margin: 0px 5px; /*pone un espacio hacia de margen con lo de afuera de 0px arriba y abajo y 5px a izquierda y derecha*/
+}
+.campos .texto label{/*modifica a los label que estan dentro de la clase texto que a su vez esta dentrp de campos*/
+    margin-bottom: 4px; /*pone un margen hacia a abajo de 4px*/
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.campos .inputs input{/*modifica a los input dentro de la clase inputs que a su vez esta dentro de campos*/
+    margin: 1.5px; /*pone un margen en los cuatro lados de 1.5px*/
+}
+
+button{ /*se modifica a la etiqueta button*/
+    padding: 8px 16px; /*se añade un espacio entre el borde y el contenido del boton de 8px arriba y abajo y de 16px a cada lado*/
+    border-radius: 5px; /*se redondea las esquinas*/
+    background-color: blue; /*color de fondo*/
+    font-weight: bold; /*negrita en la letra*/
+    letter-spacing: 2px; /*espacio entre cada letras*/
+    color: white; /*color de la letra*/
+    font-size: 18px; /*tamaño de la letra*/
+    text-transform: capitalize; /*pone la primera letra en minuscula*/
+    border: none; /*le quita el borde al boton*/
+    box-shadow: 3px 3px 5px gray; /*agrag sombra en el siguiente orden (izquierda a derecha, arriba a abajo, difumindado, color)*/
+}
+/**/

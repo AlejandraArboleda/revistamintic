@@ -12,5 +12,4 @@ body{
     display: flex;/*contenido flexible*/
     flex-direction: column;/*coloca el contenido en columna*/
     align-items: center;
-
 }

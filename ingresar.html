@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/registro.css">
+    
+    <script src="js/javascript.js"></script>
     <title>Revista Mintic</title>
 </head>
 <body>
@@ -18,15 +20,15 @@
             <h1>Ingresar</h1>
             <div class="campos">
                 <div class= "texto">
-                    <label for="cedula">cedula</label>
+                    <label for="ced">cedula</label>
                     <label for="clave">contraseña</label>
                 </div>
                 <div class="inputs">
-                    <input type="text" name="cedula" id="cedula">
+                    <input type="text" name="cedula" id="ced">
                     <input type="password" name="clave" id="clave">
                 </div>
             </div>
-            <button id="btn1">ingresar</button>
+            <button id="btn1" onclick="autenticara()">ingresar</button>
             <a href="index.html">Volver</a>
         </div>
     </div>

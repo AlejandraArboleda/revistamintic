@@ -33,7 +33,7 @@ function registro() {
 function autenticara() {
     var ced = document.getElementById("ced").value;
     var clave = document.getElementById("clave").value;
-    var request = new Request('https://localhost:44369/api/values/'+ced+"/"+clave, {
+    var request = new Request('https://localhost:44308/api/autor/'+ced+"/"+clave, {
 
         method: 'Get',
 
